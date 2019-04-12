@@ -30,10 +30,10 @@ public class SecondScreen extends AppCompatActivity{
 
     public void onClick() {
         Intent intent = new Intent(this, ThirdScreen.class);
+        intent.putExtra("email", textView1.getText().toString());
+        intent.putExtra("login", textView2.getText().toString());
+        intent.putExtra("password", textView3.getText().toString());
+        intent.putExtra("age", textView4.getText().toString());
         startActivity(intent);
-        intent.putExtra("key", textView1.getText().toString());
-        intent.putExtra("key", textView2.getText().toString());
-        intent.putExtra("key", textView3.getText().toString());
-        intent.putExtra("key", textView4.getText().toString());
     }
 }
