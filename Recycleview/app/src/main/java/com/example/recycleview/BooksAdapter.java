@@ -1,5 +1,6 @@
 package com.example.recycleview;
 
+import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -12,10 +13,12 @@ import androidx.recyclerview.widget.RecyclerView;
 public class BooksAdapter extends RecyclerView.Adapter<BooksHolder> {
 
     private ArrayList<String> list;
+    Context context;
 
 
-    public BooksAdapter(ArrayList<String> list) {
+    public BooksAdapter(ArrayList<String> list, Context context) {
         this.list = list;
+        this.context = context;
     }
 
     @NonNull

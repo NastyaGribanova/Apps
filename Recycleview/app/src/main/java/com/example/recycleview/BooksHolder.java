@@ -1,5 +1,6 @@
 package com.example.recycleview;
 
+import android.content.Context;
 import android.view.View;
 import android.widget.TextView;
 
@@ -14,7 +15,8 @@ public class BooksHolder extends RecyclerView.ViewHolder {
         super(itemView);
         text = itemView.findViewById(R.id.textView);
     }
-    public void bind(String name) {
+    public void bind(String name, Context context) {
         text.setText(name);
+
     }
 }
